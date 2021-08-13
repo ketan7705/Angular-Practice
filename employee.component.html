@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<hr />
+<h1> Employee App</h1>
+<h1> Message App</h1>
+<h1> Message is : {{message}}</h1>
+<button (click)="changeMessage()">Click</button>
+<h1> Name : {{ name }} </h1>
+<h1> Email : {{ email }} </h1>
+<h1> Address : {{ address.city }} - {{ address.state}} </h1>
+<button class="btn btn-danger">Product Details</button>
+<img src="http://lorempixel.com/400/200" /><br><br>
+<img [src]="imageURL" />
+<button class="btn btn-danger"
+    (click)="changeURL('https://i.picsum.photos/id/520/536/354.jpg?hmac=D05zNm6sROfuXkJD1fQO8SCwQx8gpwReBZ9FVJz76Yw')">Change
+    image</button>
+<h1>Number 1 :<input type="number" name="number1" [(ngModel)]="number1"></h1>
+<h1>Number 2 :<input type="number" name="number2" [(ngModel)]="number2"></h1>
+
+<h1>Result is : <input type="number" name="result" [(ngModel)]="result" value="{{addNumber()}}"></h1>
